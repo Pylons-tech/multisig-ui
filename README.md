@@ -22,7 +22,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ```
 NEXT_PUBLIC_FAUNADB_SECRET={YOUR FUNADB SECRET HERE}
-NEX_PUBLIC_HOST=http://localhost:3000/
+NEXT_PUBLIC_HOST=http://localhost:3000/
 NEXT_PUBLIC_CHAIN_ID={YOUR KEY HERE} 
 NEXT_PUBLIC_CHAIN_NAME={YOUR KEY HERE} 
 NEXT_PUBLIC_RPC={YOUR KEY HERE} 
