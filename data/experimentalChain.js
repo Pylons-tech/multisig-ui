@@ -136,4 +136,4 @@ export const chainObj = [{
       high: 0.03,
     },
   }
-}
+}]
