@@ -7,12 +7,11 @@ import { convertValueFromDenom } from "../../../libs/stringConvert";
 import Button from "../../input/Button";
 
 const SendMsgForm = ({ address, chain, style, msgs, setMsgs }) => {
-    const [txBody, setTxBody] = useState({
-      toAddress: '',
-      amount: 0,
-      denom: ''
-    });
-    const [addrError, setAddrError] = useState("")
+  const [txBody, setTxBody] = useState({
+    toAddress: '',
+    amount: 0,
+  });
+  const [addrError, setAddrError] = useState("")
 
   const invalidForm = () => {
     for (let key in txBody) {
@@ -48,11 +47,6 @@ const SendMsgForm = ({ address, chain, style, msgs, setMsgs }) => {
       setTxBody({
         ...txBody,
         [e.target.name]: parseFloat(e.target.value)
-      });
-    } else if (e.target.name === 'denom') {
-      setTxBody({
-        ...txBody,
-        [e.target.name]: denom[e.target.value]
       });
     } else {
       setTxBody({
